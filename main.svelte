@@ -2,7 +2,7 @@
 import { OLSKLocalized } from 'OLSKInternational';
 </script>
 
-<div class="OLSKDetailPlaceholder OLSKLayoutElementTextVisual">{ OLSKLocalized('OLSKDetailPlaceholderText') }</div>
+<div class="OLSKDetailPlaceholder OLSKDecorTextVisual">{ OLSKLocalized('OLSKDetailPlaceholderText') }</div>
 
 <style>
 .OLSKDetailPlaceholder {
