@@ -9,6 +9,8 @@ import { OLSKLocalized } from 'OLSKInternational';
 	opacity: 0.5;
 	text-align: center;
 
+	color: var(--OLSKCommonForeground);
+
 	/* OLSKDetailPlaceholderFlexbox:Parent */
 	display: flex;
 	justify-content: center;
