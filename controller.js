@@ -1,6 +1,6 @@
 exports.OLSKControllerRoutes = function() {
 	return [{
-		OLSKRoutePath: '/stub/OLSKDetailPlaceholder',
+		OLSKRoutePath: '/',
 		OLSKRouteMethod: 'get',
 		OLSKRouteSignature: 'OLSKDetailPlaceholderStubRoute',
 		OLSKRouteFunction (req, res, next) {
