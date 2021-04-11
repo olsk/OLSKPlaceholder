@@ -1,8 +1,10 @@
 <script>
+export let OLSKDetailPlaceholderHTML = '';
+
 import { OLSKLocalized } from 'OLSKInternational';
 </script>
 
-<div class="OLSKDetailPlaceholder OLSKDecorTextVisual">{ OLSKLocalized('OLSKDetailPlaceholderText') }</div>
+<div class="OLSKDetailPlaceholder OLSKDecorTextVisual">{ @html OLSKDetailPlaceholderHTML || OLSKLocalized('OLSKDetailPlaceholderText') }</div>
 
 <style>
 .OLSKDetailPlaceholder {
