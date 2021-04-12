@@ -1,19 +1,19 @@
 const kDefaultRoute = require('./controller.js').OLSKControllerRoutes().shift();
 
 Object.entries({
-	OLSKDetailPlaceholder: '.OLSKDetailPlaceholder',
+	OLSKPlaceholder: '.OLSKPlaceholder',
 }).map(function (e) {
 	return global[e.shift()]  = e.pop();
 });
 
-describe('OLSKDetailPlaceholder_Access', function () {
+describe('OLSKPlaceholder_Access', function () {
 
 	before(function() {
 		return browser.OLSKVisit(kDefaultRoute);
 	});
 
-	it('shows OLSKDetailPlaceholder', function () {
-		browser.assert.elements(OLSKDetailPlaceholder, 1);
+	it('shows OLSKPlaceholder', function () {
+		browser.assert.elements(OLSKPlaceholder, 1);
 	});
 
 });

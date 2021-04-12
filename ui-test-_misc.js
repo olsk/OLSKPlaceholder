@@ -1,21 +1,21 @@
 const kDefaultRoute = require('./controller.js').OLSKControllerRoutes().shift();
 
-describe('OLSKDetailPlaceholder_Misc', function () {
+describe('OLSKPlaceholder_Misc', function () {
 
-	const OLSKDetailPlaceholderHTML = '<b>' + Math.random().toString() + '</b>';
+	const OLSKPlaceholderHTML = '<b>' + Math.random().toString() + '</b>';
 
 	before(function() {
 		return browser.OLSKVisit(kDefaultRoute, {
-			OLSKDetailPlaceholderHTML,
+			OLSKPlaceholderHTML,
 		});
 	});
 
 	it('classes OLSKDecorTextVisual', function () {
-		browser.assert.hasClass(OLSKDetailPlaceholder, 'OLSKDecorTextVisual');
+		browser.assert.hasClass(OLSKPlaceholder, 'OLSKDecorTextVisual');
 	});
 
-	it('binds OLSKDetailPlaceholderHTML', function () {
-		browser.assert.OLSKInnerHTML(OLSKDetailPlaceholder, OLSKDetailPlaceholderHTML);
+	it('binds OLSKPlaceholderHTML', function () {
+		browser.assert.OLSKInnerHTML(OLSKPlaceholder, OLSKPlaceholderHTML);
 	});
 
 });

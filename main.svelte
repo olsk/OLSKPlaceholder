@@ -1,25 +1,25 @@
 <script>
-export let OLSKDetailPlaceholderHTML = '';
+export let OLSKPlaceholderHTML = '';
 
 import { OLSKLocalized } from 'OLSKInternational';
 </script>
 
-<div class="OLSKDetailPlaceholder OLSKDecorTextVisual">{ @html OLSKDetailPlaceholderHTML || OLSKLocalized('OLSKDetailPlaceholderText') }</div>
+<div class="OLSKPlaceholder OLSKDecorTextVisual">{ @html OLSKPlaceholderHTML || OLSKLocalized('OLSKPlaceholderText') }</div>
 
 <style>
-.OLSKDetailPlaceholder {
+.OLSKPlaceholder {
 	opacity: 0.5;
 	text-align: center;
 
 	color: var(--OLSKCommonForeground);
 
-	/* OLSKDetailPlaceholderFlexbox:Parent */
+	/* OLSKPlaceholderFlexbox:Parent */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-:global(.OLSKIsLoading) .OLSKDetailPlaceholder {
+:global(.OLSKIsLoading) .OLSKPlaceholder {
 	visibility: hidden;
 }
 </style>
