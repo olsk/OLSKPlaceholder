@@ -15,7 +15,7 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 		});
 	
 		it('localizes text', function() {
-			browser.assert.text(OLSKPlaceholder, uLocalized('OLSKPlaceholderText'));
+			return browser.assert.text(OLSKPlaceholder, uLocalized('OLSKPlaceholderText'));
 		});
 	
 	});

@@ -13,7 +13,7 @@ describe('OLSKPlaceholder_Access', function () {
 	});
 
 	it('shows OLSKPlaceholder', function () {
-		browser.assert.elements(OLSKPlaceholder, 1);
+		return browser.assert.elements(OLSKPlaceholder, 1);
 	});
 
 });

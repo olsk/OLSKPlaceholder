@@ -11,11 +11,11 @@ describe('OLSKPlaceholder_Misc', function () {
 	});
 
 	it('classes OLSKDecorTextVisual', function () {
-		browser.assert.hasClass(OLSKPlaceholder, 'OLSKDecorTextVisual');
+		return browser.assert.hasClass(OLSKPlaceholder, 'OLSKDecorTextVisual');
 	});
 
 	it('binds OLSKPlaceholderHTML', function () {
-		browser.assert.OLSKInnerHTML(OLSKPlaceholder, OLSKPlaceholderHTML);
+		return browser.assert.OLSKInnerHTML(OLSKPlaceholder, OLSKPlaceholderHTML);
 	});
 
 });
